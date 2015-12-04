@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="113053" started-at="2015-12-03T21:30:38Z" finished-at="2015-12-03T21:32:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="113053" started-at="2015-12-03T21:30:38Z" finished-at="2015-12-03T21:32:31Z">
+      <class name="com.vk.SimpleTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="18" started-at="2015-12-03T18:30:38Z" finished-at="2015-12-03T18:30:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="10323" started-at="2015-12-03T18:30:38Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-12-03T18:30:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="autoLogin()[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="autoLogin" is-config="true" duration-ms="1498" started-at="2015-12-03T18:30:49Z" finished-at="2015-12-03T18:30:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- autoLogin -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2015-12-03T18:30:50Z" finished-at="2015-12-03T18:30:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.vk.SimpleTest.simpleTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="simpleTest()[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="simpleTest" duration-ms="100932" started-at="2015-12-03T18:30:50Z" finished-at="2015-12-03T18:32:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleTest -->
+        <test-method status="PASS" signature="afterMetod()[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="afterMetod" is-config="true" duration-ms="1" started-at="2015-12-03T18:32:31Z" finished-at="2015-12-03T18:32:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMetod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="3" started-at="2015-12-03T18:32:31Z" finished-at="2015-12-03T18:32:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.vk.SimpleTest.simpleTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="shutdownDriver()[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="shutdownDriver" is-config="true" duration-ms="253" started-at="2015-12-03T18:32:31Z" finished-at="2015-12-03T18:32:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutdownDriver -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2015-12-03T18:32:31Z" finished-at="2015-12-03T18:32:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.vk.SimpleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,32 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.5
+version = '1.0'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart',
+                   'Implementation-Version': version
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+	def springVersion = "4.0.7.RELEASE"
+	def testngVersion = "6.8.7"
+	def seleniumVersion = "2.45.0"
+	
+	dependencies {    
+   	//compile "org.seleniumhq.selenium:selenium-java:2.15.0"
+   		compile group: 'org.testng', name:'testng', version:testngVersion
+   		compile group: 'org.seleniumhq.selenium', name: 'selenium-server', version:seleniumVersion
+    	compile group: 'org.springframework', name: 'spring-webmvc', version:springVersion
+   		compile group: 'org.springframework', name: 'spring-core', version:springVersion
+   		compile group: 'org.springframework', name: 'spring-web', version:springVersion
+   		compile group: 'org.springframework', name: 'spring-test', version:springVersion
+   		compile group: 'org.springframework', name: 'spring-context', version:springVersion  
+}	
+		
+test.useTestNG()
