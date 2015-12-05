@@ -1,5 +1,8 @@
+import org.testng.annotations.Test
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'idea'
 
 sourceCompatibility = 1.5
 version = '1.0'
@@ -28,5 +31,20 @@ repositories {
    		compile group: 'org.springframework', name: 'spring-test', version:springVersion
    		compile group: 'org.springframework', name: 'spring-context', version:springVersion  
 }	
-		
-test.useTestNG()
+
+    task wrapper(type: Wrapper) {
+        gradleVersion = "2.3"
+    }		
+
+// many threads bbs report test suite run
+task testReportBbs(type: Test) {
+    useTestNG()
+    outputs.upToDateWhen {
+        false
+    }
+    ignoreFailures true
+    options {
+        suites "src/test/resources/testng-suite.xml"
+        useDefaultListeners = true
+    }
+}

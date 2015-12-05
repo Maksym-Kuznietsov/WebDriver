@@ -13,7 +13,9 @@ public class LoginPagePageObject extends AbstractPageObject{
 	
 	@FindBy(css = "div[id='tasks']")
 	private WebElement tasksTable;
-	
+
+    @FindBy(id = "jenkins-home-link")
+    private WebElement jenkins;
 	
 //	public List<WebElement> getTasksTable(){
 //		List<WebElement> hrefList = null;
@@ -25,14 +27,23 @@ public class LoginPagePageObject extends AbstractPageObject{
 //		return hrefList;
 //	}
 	
+//	public List<WebElement> getTasksTable(){
+//		List<WebElement> hrefList = new ArrayList<WebElement>();
+//		List<WebElement> divList = tasksTable.findElements(By.tagName("div"));
+//		for(WebElement itr:divList){
+//			List<WebElement> temp = itr.findElements(By.tagName("a"));
+//			for(WebElement href:temp){
+//				hrefList.add(href);
+//			}
+//		}
+//		return hrefList;
+//	}
+
 	public List<WebElement> getTasksTable(){
-		List<WebElement> hrefList = new ArrayList<WebElement>();
 		List<WebElement> divList = tasksTable.findElements(By.tagName("div"));
-		for(WebElement itr:divList){
-			List<WebElement> temp = itr.findElements(By.tagName("a"));
-			for(WebElement href:temp){
-				hrefList.add(href);
-			}
+		List<WebElement> hrefList = new ArrayList<WebElement>(divList.size());
+		for(WebElement itr:divList){			
+				hrefList.add(itr.findElement(By.tagName("a")));			
 		}
 		return hrefList;
 	}

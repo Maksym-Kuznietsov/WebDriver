@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="WEBDRIVER-TEST" verbose="1" configfailurepolicy="continue"
+       preserve-order="true"  parallel="methods" thread-count="1" >
+
+     <test name="allTests">
+        <packages>
+            <package name="com.vk.*" />
+        </packages>
+    <!--    <classes>
+            <class name="ua.profitsoft.bo.finance.charge.EditContractChargeTest" />
+            <class name="ua.profitsoft.bo.finance.charge.ContractChargeTest" />
+            <class name="ua.profitsoft.bo.finance.charge.ChargeSpecifeTest" />
+            <class name="ua.profitsoft.bo.finance.payment.RemoveDistributionPaymentTest" />
+            <class name="ua.profitsoft.bo.finance.payment.AllKindsPaymentsDistributionTest" />
+            <class name="ua.profitsoft.bo.finance.payment.AvrPaymentTest" />
+            <class name="ua.profitsoft.bo.stock.contract.cancellationRequest.CalculationCancellationRequestTest"/>
+            <class name="ua.profitsoft.bo.stock.contract.cancellationRequest.CancellationRequestAVChargeTest"/>
+            <class name="ua.profitsoft.bo.stock.contract.cancellationRequest.CancellationRequestWithAvrTest"/>
+            <class name="ua.profitsoft.bo.finance.charge.ChargeCharacteristicTest" />
+            </classes> -->
+    </test>
+
+</suite>

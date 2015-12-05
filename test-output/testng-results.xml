@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="113053" started-at="2015-12-03T21:30:38Z" finished-at="2015-12-03T21:32:31Z">
+  <suite name="Default suite" duration-ms="60621" started-at="2015-12-04T20:37:11Z" finished-at="2015-12-04T20:38:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="113053" started-at="2015-12-03T21:30:38Z" finished-at="2015-12-03T21:32:31Z">
+    <test name="Default test" duration-ms="60621" started-at="2015-12-04T20:37:11Z" finished-at="2015-12-04T20:38:12Z">
       <class name="com.vk.SimpleTest">
-        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="18" started-at="2015-12-03T18:30:38Z" finished-at="2015-12-03T18:30:38Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.vk.SimpleTest@6111b1b0]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="19" started-at="2015-12-04T17:37:11Z" finished-at="2015-12-04T17:37:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestClass -->
-        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="10323" started-at="2015-12-03T18:30:38Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-12-03T18:30:49Z">
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.vk.SimpleTest@6111b1b0]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="10785" started-at="2015-12-04T17:37:11Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-12-04T17:37:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextPrepareTestInstance -->
-        <test-method status="PASS" signature="autoLogin()[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="autoLogin" is-config="true" duration-ms="1498" started-at="2015-12-03T18:30:49Z" finished-at="2015-12-03T18:30:50Z">
+        <test-method status="PASS" signature="autoLogin()[pri:0, instance:com.vk.SimpleTest@6111b1b0]" name="autoLogin" is-config="true" duration-ms="1630" started-at="2015-12-04T17:37:22Z" finished-at="2015-12-04T17:37:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- autoLogin -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2015-12-03T18:30:50Z" finished-at="2015-12-03T18:30:50Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.vk.SimpleTest@6111b1b0]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="2" started-at="2015-12-04T17:37:24Z" finished-at="2015-12-04T17:37:24Z">
           <params>
             <param index="0">
               <value>
@@ -30,15 +30,92 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="simpleTest()[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="simpleTest" duration-ms="100932" started-at="2015-12-03T18:30:50Z" finished-at="2015-12-03T18:32:31Z">
+        <test-method status="FAIL" signature="simpleTest()[pri:0, instance:com.vk.SimpleTest@6111b1b0]" name="simpleTest" duration-ms="47731" started-at="2015-12-04T17:37:24Z" finished-at="2015-12-04T17:38:11Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"tag name","selector":"a"}
+Command duration or timeout: 5.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'DELL_INSPIRON', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_76'
+*** Element info: {Using=tag name, value=a}
+Session ID: b6d5513d-4d2b-4235-9df5-5cc71151f478
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=33.0}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"tag name","selector":"a"}
+Command duration or timeout: 5.19 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'DELL_INSPIRON', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_76'
+*** Element info: {Using=tag name, value=a}
+Session ID: b6d5513d-4d2b-4235-9df5-5cc71151f478
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=33.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:171)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByTagName(RemoteWebElement.java:260)
+	at org.openqa.selenium.By$ByTagName.findElement(By.java:330)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:167)
+	at com.vk.LoginPagePageObject.getTasksTable(LoginPagePageObject.java:44)
+	at com.vk.SimpleTest.simpleTest(SimpleTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:200)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:172)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:212)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"tag name","selector":"a"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'DELL_INSPIRON', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_76'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/DELLIN~1/AppData/Local/Temp/anonymous8105944348222551803webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/DELLIN~1/AppData/Local/Temp/anonymous8105944348222551803webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- simpleTest -->
-        <test-method status="PASS" signature="afterMetod()[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="afterMetod" is-config="true" duration-ms="1" started-at="2015-12-03T18:32:31Z" finished-at="2015-12-03T18:32:31Z">
+        <test-method status="PASS" signature="afterMetod()[pri:0, instance:com.vk.SimpleTest@6111b1b0]" name="afterMetod" is-config="true" duration-ms="1" started-at="2015-12-04T17:38:11Z" finished-at="2015-12-04T17:38:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMetod -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="3" started-at="2015-12-03T18:32:31Z" finished-at="2015-12-03T18:32:31Z">
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.vk.SimpleTest@6111b1b0]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="3" started-at="2015-12-04T17:38:11Z" finished-at="2015-12-04T17:38:11Z">
           <params>
             <param index="0">
               <value>
@@ -49,11 +126,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="shutdownDriver()[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="shutdownDriver" is-config="true" duration-ms="253" started-at="2015-12-03T18:32:31Z" finished-at="2015-12-03T18:32:31Z">
+        <test-method status="PASS" signature="shutdownDriver()[pri:0, instance:com.vk.SimpleTest@6111b1b0]" name="shutdownDriver" is-config="true" duration-ms="395" started-at="2015-12-04T17:38:11Z" finished-at="2015-12-04T17:38:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutdownDriver -->
-        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.vk.SimpleTest@1cc8aada]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2015-12-03T18:32:31Z" finished-at="2015-12-03T18:32:31Z">
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.vk.SimpleTest@6111b1b0]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2015-12-04T17:38:12Z" finished-at="2015-12-04T17:38:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestClass -->
