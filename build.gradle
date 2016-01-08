@@ -35,16 +35,3 @@ repositories {
     task wrapper(type: Wrapper) {
         gradleVersion = "2.3"
     }		
-
-// many threads bbs report test suite run
-task testReportBbs(type: Test) {
-    useTestNG()
-    outputs.upToDateWhen {
-        false
-    }
-    ignoreFailures true
-    options {
-        suites "src/test/resources/testng-suite.xml"
-        useDefaultListeners = true
-    }
-}
