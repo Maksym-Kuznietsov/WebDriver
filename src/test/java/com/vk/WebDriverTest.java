@@ -6,6 +6,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 
 import com.vk.configuration.TestProperties;
@@ -36,12 +37,13 @@ public class WebDriverTest extends AbstractTestNGSpringContextTests{
 
 	@AfterMethod(alwaysRun = true)
 	public void afterMetod() {
-		// logout. Need for starting next test in thread
+        driver.get(properties.getStartUrl());
 	}
 
-	@AfterClass
+	@AfterSuite
 	public void shutdownDriver() {
-		driver.quit();
+
+        driver.quit();
 	}
 
 }

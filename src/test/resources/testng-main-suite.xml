@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="WEBDRIVER-TEST" verbose="1" configfailurepolicy="continue"
-       preserve-order="true"  parallel="methods" thread-count="1" >
+<suite name="mekaTest" verbose="1" configfailurepolicy="continue"
+       preserve-order="true"  parallel="classes" thread-count="2" >
 
-     <test name="allTests">
-        <packages>
-            <package name="com.vk.*" />
-        </packages>
-    </test>
+<test name="AllTests">
+    <packages>
+        <package name="com.vk.*" />
+    </packages>
+</test>
 
 </suite>
