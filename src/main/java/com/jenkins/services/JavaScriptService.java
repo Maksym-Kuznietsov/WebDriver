@@ -1,4 +1,4 @@
-package com.jenkins.configuration;
+package com.jenkins.services;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
